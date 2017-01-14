@@ -34,5 +34,6 @@ defmodule TrotExample.Router do
   end
 
   import_routes TrotExample.Router.Templates
+  import_routes TrotExample.Router.ShooterApi
   import_routes Trot.NotFound
 end
