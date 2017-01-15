@@ -9,4 +9,12 @@ defmodule TrotExample.Router.ShooterApi do
   get "/get_messages" do
     {200, %{"messages" => [%{"type" => "test", "action" => "none"}]}}
   end
+
+  post "/send_messages" do
+    IO.puts "OMG"
+    {:ok, data, _none} = Plug.Conn.read_body(conn)
+    IO.puts data
+    {:ok, data} = JSX.decode data
+    IO.inspect data
+  end
 end

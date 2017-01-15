@@ -11,10 +11,10 @@ defmodule TrotExample.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :trot]]
+    [applications: [:logger, :trot, :exjsx]]
   end
 
   defp deps do
-    [{:trot, github: "hexedpackets/trot"}]
+    [{:trot, github: "hexedpackets/trot"}, {:exjsx, github: "talentdeficit/exjsx"}]
   end
 end
