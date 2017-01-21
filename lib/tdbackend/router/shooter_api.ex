@@ -1,4 +1,4 @@
-defmodule TrotExample.Router.ShooterApi do
+defmodule TDBackend.Router.ShooterApi do
   use Trot.Router
   use Trot.Template
 
