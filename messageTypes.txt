@@ -1,0 +1,31 @@
+message types:
+  -shoot:
+
+  -enemy_create:
+{
+	type: "enemy_create",
+	enemy: enemy
+}
+
+
+  -enemy_destroy:
+
+  -enemy_damage:
+{
+	type: "enemy_damage",
+	enemy: enemy,
+	damage: int
+}
+	
+  -die:
+    
+  -damage:
+
+message objects:
+  -enemy
+{
+	id: string
+	hp: int
+	health: int
+	dead: bool
+}
